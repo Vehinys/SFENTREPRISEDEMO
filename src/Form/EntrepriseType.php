@@ -18,7 +18,7 @@ class EntrepriseType extends AbstractType
             ->add('raisonSociale', TextType::class, ['attr' => ['class '=> 'form-control']])
             ->add('dateCreation', DateType::class, ['widget'=> 'single_text','attr' => ['class '=> 'form-control']])
             ->add('adresse', TextType::class, ['attr' => ['class '=> 'form-control']])
-            ->add('cp', TextType::class, ['attr' => ['class '=> 'form-control']])
+            ->add('cp', TextType::class, ['required'=>'false','attr' => ['class '=> 'form-control']])
             ->add('ville', TextType::class, ['attr' => ['class '=> 'form-control']])
             ->add('valider', SubmitType::class, ['attr' => ['class '=> 'btn btn-success']])
         ;
